@@ -90,7 +90,6 @@ public class Fraction {
             a = b;
             b = rem;
         }
-        System.out.println(a);
         return a;
 
     }
