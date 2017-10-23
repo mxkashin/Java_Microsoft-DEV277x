@@ -26,19 +26,37 @@ public class FractionCalculator {
             if (operation.equals("=")) {
                 System.out.println(fraction1.equals(fraction2));
             } else {
-                if (operation.equals("+")) {
-                    System.out.println(fraction1.add(fraction2));
-                } else if (operation.equals("-")) {
-                    System.out.println(fraction1.subtract(fraction2));
-                } else if (operation.equals("/")) {
-                    try {
-                        System.out.println(fraction1.divide(fraction2));
-                    } catch (IllegalArgumentException Fraction) {
-                        System.out.println("Undefined");
-                    }
-                } else {
-                    System.out.println(fraction1.multiply(fraction2));
+                switch (operation){
+                    case "+":
+                        System.out.println(fraction1.add(fraction2));
+                        break;
+                    case "-":
+                        System.out.println(fraction1.subtract(fraction2));
+                        break;
+                    case "/":
+                        try {
+                            System.out.println(fraction1.divide(fraction2));
+                        } catch (IllegalArgumentException Fraction) {
+                            System.out.println("Undefined");
+                        }
+                        break;
+                    default:
+                        System.out.println(fraction1.multiply(fraction2));
+
                 }
+                //if (operation.equals("+")) {
+                //    System.out.println(fraction1.add(fraction2));
+                //} else if (operation.equals("-")) {
+                //    System.out.println(fraction1.subtract(fraction2));
+                //} else if (operation.equals("/")) {
+                //    try {
+                //        System.out.println(fraction1.divide(fraction2));
+                //    } catch (IllegalArgumentException Fraction) {
+                //        System.out.println("Undefined");
+                //    }
+                //} else {
+                //    System.out.println(fraction1.multiply(fraction2));
+                //}
             }
         }
     }
