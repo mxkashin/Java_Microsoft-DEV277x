@@ -56,6 +56,7 @@ public class Fraction {
         if (other.numerator == 0){
             throw new IllegalArgumentException("you cannot divide by 0");
         } else {
+            
             int newNumerator = this.numerator * other.denominator;
             int newDenominator = this.denominator * other.numerator;
             Fraction result = new Fraction(newNumerator, newDenominator);
