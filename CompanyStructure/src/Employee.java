@@ -18,7 +18,7 @@ public abstract class Employee {
         return name;
     }
 
-    public double getBaseSalry() {
+    public double getBaseSalary() {
         return baseSalary;
     }
 
